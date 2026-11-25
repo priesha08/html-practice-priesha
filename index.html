@@ -2,6 +2,14 @@
     <h1>Priesha Pundir</h1>
     <p>figuring things out, learning new stuff and enjoying the journey!</p>
 </header>
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#timetable">Timetable</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
 <section id="about">
     <h2>A Little Bit About Me</h2>
@@ -33,4 +41,73 @@
             project maybe.</li>
         <li>Make the most of my first year at college.</li>
     </ol>
+</section>
+<section id="timetable">
+    <h2>Timetable</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Subject</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>C Programming</td>
+                <td>9 AM - 10 AM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Maths</td>
+                <td>10 AM - 11 AM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Physics</td>
+                <td>11 AM - 12 PM</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="2">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="reason">Reason for contacting:</label>
+        <select id="reason" name="reason" required>
+            <option value="">Select a reason</option>
+            <option value="academic">Study Related</option>
+            <option value="project">Project Related</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <p>Preferred contact method:</p>
+
+        <input type="radio" id="email-contact" name="method" value="email">
+        <label for="email-contact">Email</label>
+
+        <input type="radio" id="phone-contact" name="method" value="phone">
+        <label for="phone-contact">Phone</label>
+        <br><br>
+
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" name="message" rows="5" cols="30" required minlength="10"></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
 </section>
